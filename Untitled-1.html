@@ -3,11 +3,11 @@
 
 <head>
     <!-- スマホメニュー -->
-    <link rel="stylesheet" type="text/css" href="./style1.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Toggle.js"></script>
-    <script type="text/javascript" src="sub_navi.js"></script>
+    <script type="text/javascript" src="./js/Toggle.js"></script>
+    <script type="text/javascript" src="./js/sub_navi.js"></script>
 
     <!-- bootstrap4用css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -19,12 +19,13 @@
 
     <!--自作CSS -->
     <style type="text/css">
-    /*ここに調整CSS記述*/
-    .jumbotron { 
-        background:url(./img/20210221_145137.jpg) center no-repeat; background-size: cover;
-        background-color:rgba(255,255,255,0.45);
-        background-blend-mode:lighten;
-    }
+        /*ここに調整CSS記述*/
+        .jumbotron {
+            background: url(./img/20210221_145137.jpg) center no-repeat;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.45);
+            background-blend-mode: lighten;
+        }
     </style>
 
     <meta charset="UTF-8">
@@ -46,56 +47,25 @@
 
             <ul class="main_navi">
                 <li><a href="/">HOME</a></li>
-
                 <li>
                     <span class="btn_has_child">リンク</span>
                     <div class="dropdown">
                         <div class="dropdown_inner">
                             <ul>
                                 <li class="page"><a href="./index.html">トップ</a></li>
-                                <li class="page"><a href="./index-min.html">画像ページ軽量版</a></li>
-                                <li class="page"><a href="./csv/index.html">database</a></li>
-                                <li class="page"><a href="./minecraft_command/index.html">マインクラフトコマンドジェネレーター</a></li>
-                                <li class="page"><a href="./procon30/index.html">procon30</a></li>
-                                <li class="page"><a href="./bootstrap4/">bootstrap4</a></li>
-                                <li class="page"><a href="./app01/">app01</a></li>
-                                <li class="page"><a href="https://github.com/Guccisan">GitHub(Guccisan)</a></li>
-                                <li class="page"><a href="./test/">bootstrapのデモページ（初期）</a></li>
-                                <li class="page"><a href="./test/fes/">高専祭 be馬鹿</a></li>
-                                <li class="page"><a
-                                        href="https://kosensai.github.io/Kyoen.github.io/kosensai/home.html">高専祭 饗宴</a>
-                                </li>
+                                <li class="page"><a href="./note/">note</a></li>
                             </ul>
                         </div>
                         <div class="btn_dropdown_close">CLOSE</div>
                     </div>
                 </li>
                 <li>
-                    <span class="btn_has_child">電力会社・サブコン</span>
+                    <span class="btn_has_child">外部リンク</span>
                     <div class="dropdown">
                         <div class="dropdown_inner">
                             <ul>
-                                <li class="page"><a href="https://www.jpower.co.jp/">J-POWER(電源開発)</a></li>
-                                <li class="page"><a href="https://www.chuden.co.jp/">中部電力</a></li>
-                                <li class="page"><a href="https://www.kepco.co.jp/">関西電力</a></li>
-                                <li class="page"><a href="https://www.kyuden.co.jp/">九州電力</a></li>
-                                <li class="page"><a href="https://www.kyudenko.co.jp/">九電工</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn_dropdown_close">CLOSE</div>
-                    </div>
-                </li>
-                <li>
-                    <span class="btn_has_child">コンペチタ</span>
-                    <div class="dropdown">
-                        <div class="dropdown_inner">
-                            <ul>
-                                <li class="page"><a href="https://www.yaskawa.co.jp/">安川電機</a></li>
-                                <li class="page"><a href="https://www.fanuc.co.jp/">ファナック</a></li>
-                                <li class="page"><a href="https://www.mitsubishielectric.co.jp/">三菱電機</a></li>
-                                <li class="page"><a href="https://www.fujielectric.co.jp/">富士電機</a></li>
-                                <li class="page"><a href="https://www.panasonic.com/jp/home.html">パナソニック</a></li>
-                                <li class="page"><a href="https://www.omron.co.jp/">オムロン</a></li>
+                                <li class="page"><a href="https://github.com/saka-gucci">GitHub(saka-gucci)</a></li>
+                                <li class="page"><a href="https://guccisan.github.io/">guccisan</a></li>
                             </ul>
                         </div>
                         <div class="btn_dropdown_close">CLOSE</div>
@@ -114,14 +84,17 @@
             <!-- ジャンボトロン -->
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
-                <p>powered by Bootstrap 4.2</p>
-                <a class="btn btn-primary btn-lg" href="https://getbootstrap.jp/docs/4.2/getting-started/introduction/" role="button" target="_blank">Learn more</a>
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.
+                    </p>
+                    <p>powered by Bootstrap 4.2</p>
+                    <a class="btn btn-primary btn-lg"
+                        href="https://getbootstrap.jp/docs/4.2/getting-started/introduction/" role="button"
+                        target="_blank">Learn more</a>
                 </div>
             </div>
 
@@ -137,21 +110,25 @@
                             class='img-thumbnail'></a>
                 </div>
                 <div class='col-12 col-md-6'>
-                    <a href='./img/IMG_3370.jpg'><img src='./img/IMG_3370_640x480.jpg' alt='img4' class='img-thumbnail'></a>
+                    <a href='./img/IMG_3370.jpg'><img src='./img/IMG_3370_640x480.jpg' alt='img4'
+                            class='img-thumbnail'></a>
                 </div>
                 <div class='col-12 col-md-6'>
-                    <a href='./img/nightview.jpg'><img src='./img/nightview_640x480.jpg' alt='img4' class='img-thumbnail'></a>
+                    <a href='./img/nightview.jpg'><img src='./img/nightview_640x480.jpg' alt='img4'
+                            class='img-thumbnail'></a>
                 </div>
             </div>
 
-            <hr class="my-4">
-            <h4 class="d-block d-md-none">article</h4>
-            <h1 class="d-none d-md-block">article</h1>
+            <hr class="my-3">
+            <h4 class="d-block d-md-none">link</h4>
+            <h1 class="d-none d-md-block">link</h1>
 
-            <article class="conss">
-                <button id="input_btn" class="btn btn-outline-info">テキストを読み込む</button>
-                <pre id="content" style="font-family: sans-serif;"></pre>
-            </article>
+            <div class="container">
+                <!-- Content here -->
+                <div class="row">
+                    <p><a href="./note/">note<span class="badge badge-secondary">New</span></a></p>
+                </div>
+            </div>
 
         </div>
     </main>

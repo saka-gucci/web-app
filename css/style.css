@@ -405,20 +405,3 @@ pre {
   padding-top: 80px;
   }
 }
-
-  /* .conss{
-    display: block;
-    padding-top: 200px;
-    padding-bottom: 80px;
-    padding-right: calc(50% - 500px);
-    padding-left: calc(50% - 500px);
-  }
-
-  @media screen and (max-width: 812px) {
-.conss{
-  display: block;
-  padding: 0;
-  padding-top: 80px;
-  padding-bottom: 20px;
-}
-} */
