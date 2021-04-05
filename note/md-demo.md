@@ -4,6 +4,8 @@
 行末にスペースを2つ入れると  
 改行されます。
 
+[前のページへ戻る](./index.md)
+
 段落を分けるには、[空行](http://example.com/) を入れます。
 
 使い方
@@ -129,4 +131,4 @@ Dual licensed under the [MIT license][MIT] and [GPL license][GPL].
 [MIT]: http://www.opensource.org/licenses/mit-license.php
 [GPL]: http://www.gnu.org/licenses/gpl.html
 
-[前のページへ戻る]: ./index.md
+[前のページへ戻る](./index.md)
