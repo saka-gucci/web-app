@@ -11,4 +11,4 @@
 
 作ったページ
 ------
-+ Markdownデモページ [link](./demo.md)
++ Markdownデモページ [link](./md-demo.md)
