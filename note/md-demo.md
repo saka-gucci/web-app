@@ -69,7 +69,7 @@ GitHubのリポジトリ内にある画像も同様に表示可能
 
 + **example**
 
-<img src="https://github.com/Guccisan/How-to/blob/master/imgs/makunoshita.png" title="マクノシタ" />
+<img src="../img/makunoshita.png" title="マクノシタ" />
 
 ### シンタックスハイライト
 ソースコードが色付けされて見やすくなる。 ` ```(言語名) ` のように記述する。  
