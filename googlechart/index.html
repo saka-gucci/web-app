@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- スマホメニュー -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/Toggle.js"></script>
+    <script type="text/javascript" src="./js/sub_navi.js"></script>
+
+    <!-- bootstrap4用css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- bootstrap用js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- GoogleChart用js -->
+    <script src="https://www.gstatic.com/charts/loader.js" ></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぐっちさん-GoogleChart</title>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="logo"><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="toggle_txt">MENU</div>
+        </div>
+        <nav>
+
+            <ul class="main_navi">
+                <li><a href="../">HOME</a></li>
+                <li>
+                    <span class="btn_has_child">リンク</span>
+                    <div class="dropdown">
+                        <div class="dropdown_inner">
+                            <ul>
+                                <li class="page"><a href="./index.html">トップ</a></li>
+                                <li class="page"><a href="./note/">note</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn_dropdown_close">CLOSE</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="btn_has_child">外部リンク</span>
+                    <div class="dropdown">
+                        <div class="dropdown_inner">
+                            <ul>
+                                <li class="page"><a href="https://github.com/saka-gucci">GitHub(saka-gucci)</a></li>
+                                <li class="page"><a href="https://guccisan.github.io/">guccisan</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn_dropdown_close">CLOSE</div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--/ヘッダー-->
+
+    <!-- main -->
+    <main role="main">
+        <!-- メインコンテンツ -->
+        <div class="container main mainc">
+            <hr class="my-3">
+            <h1>GoogleChart</h1>
+            <hr class="my-3">
+
+
+
+            <div class="container">
+                <!-- Content here -->
+                <div class="row">
+                    <p><a href="./note/">note<span class="badge badge-secondary">New</span></a></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
