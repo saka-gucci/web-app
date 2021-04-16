@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/Toggle.js"></script>
-    <script type="text/javascript" src="./js/sub_navi.js"></script>
+    <script type="text/javascript" src="../js/Toggle.js"></script>
+    <script type="text/javascript" src="../js/sub_navi.js"></script>
 
     <!-- bootstrap4用css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -18,7 +18,40 @@
         crossorigin="anonymous"></script>
 
     <!-- GoogleChart用js -->
-    <script src="https://www.gstatic.com/charts/loader.js" ></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['geochart'],
+            // Note: プロジェクトのmapsApiKeyを取得する必要があります。
+            // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+            'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+        });
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ["都道府県","回数"],
+	            ["北海道", 5],
+	            ["青森",   2],
+	            ["秋田",   0],
+	            ["岩手",   1]
+            ]);
+            //描画オプション：描画地域などを設定できる。
+            var options = {
+                region: 'JP',  //地域
+		        displayMode: 'regions', // regions=塗りつぶし, markers=マーカー 
+		        backgroundColor: '#ebf7fe', //背景色
+		        resolution: 'provinces',
+		        colors:['white','green'], //階層の色
+                legend: 'none'
+            };
+            //地図を描画するための要素を指定する。
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+            //地図を描画する
+            chart.draw(data, options);
+        }
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +61,7 @@
 <body>
     <!--ヘッダー-->
     <header class="header">
-        <div class="logo"><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="logo"><a href="/"><img src="../img/logo.png" alt="logo"></a></div>
         <div class="toggle">
             <span></span>
             <span></span>
@@ -75,6 +108,10 @@
             <hr class="my-3">
             <h1>GoogleChart</h1>
             <hr class="my-3">
+
+            <div class="container">
+                <div id="regions_div" style="width: 400px; height: 300px;"></div>
+            </div>
 
 
 
