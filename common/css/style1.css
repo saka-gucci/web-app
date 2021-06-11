@@ -44,7 +44,7 @@ pre{
   transition: .2s;
 }
 .header_s .logo img {
-  width: 100px;
+  height: 80px;
 }
 .header_s .sub_navi {
   top: -40px;
