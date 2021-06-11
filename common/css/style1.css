@@ -15,7 +15,7 @@ ul{
   list-style: none;
 }
 
-pre {
+pre{
   width: 100%;
   font-family: sans-serif;
   text-align: justify;
@@ -98,6 +98,7 @@ pre {
   position: relative;
   z-index: 9990;
   background-color: #353535;
+  width: 100%;
 }
 
 /*メニュー画面*/
@@ -117,16 +118,17 @@ pre {
       -webkit-overflow-scrolling: touch;
     }
   }
-  
 /*メニュー画面*/
 
+/*メインメニュー*/
 .header nav .main_navi {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 100%;
+  max-width: 1110px;
   margin: 0 auto;
 }
-/*メインメニュー*/
+
 @media screen and (max-width: 812px) {
     .header nav .main_navi {
       display: block;
@@ -142,10 +144,21 @@ pre {
 /*メインメニューのリスト*/
     .header nav .main_navi > li {
       height: auto;
+      text-align: center;
+      border-bottom: 1px solid #666;
+      margin-block-start: 0;
+      width: 25%;
+    }
+
+  @media screen and (max-width: 812px) {
+    .header nav .main_navi > li {
+      height: auto;
       text-align: left;
       border-bottom: 1px solid #666;
       margin-block-start: 0;
+      width: auto;
     }
+  }
 /*メインメニューのリスト*/
   
 /*メインメニューのリストのｖ*/
@@ -217,7 +230,8 @@ pre {
     } */
 
     .header nav .main_navi > li div.dropdown .dropdown_inner {
-      width: 1000px;
+      width: 100%;
+      max-width: 1110px;
       margin: 45px auto 30px;
   }
   
@@ -238,7 +252,8 @@ pre {
   .header nav .main_navi > li div.dropdown .dropdown_inner ul {
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 100%;
+    max-width: 1110px;
   }
 
   @media screen and (max-width: 812px) {
@@ -251,8 +266,7 @@ pre {
   }
   
   .header nav .main_navi > li div.dropdown .dropdown_inner ul li {
-    width: 200px;
-    padding-right: 30px;
+    width: 25%;
     padding-bottom: 15px;
   }
 
@@ -367,7 +381,7 @@ pre {
   
     .header .toggle.active span:nth-child(1) {
       top: 11px;
-      left: 4px;
+      right: 8px;
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       transform: rotate(-45deg);
@@ -375,7 +389,7 @@ pre {
   
     .header .toggle.active span:nth-child(2), .header .toggle.active span:nth-child(3) {
       top: 11px;
-      left: 8px;
+      right: 5px;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -405,3 +419,29 @@ pre {
   padding-top: 80px;
   }
 }
+
+/*Footer==============================================================================================================*/
+footer{
+  padding: 50px 0;
+}
+
+footer p{
+  margin: 0;
+}
+
+  /* .conss{
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    padding-right: calc(50% - 500px);
+    padding-left: calc(50% - 500px);
+  }
+
+  @media screen and (max-width: 812px) {
+.conss{
+  display: block;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+} */

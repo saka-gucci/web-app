@@ -7,6 +7,8 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+    <script type="text/javascript" src="input1.js" defer="defer"></script>
+
     <!-- bootstrap4用css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -19,7 +21,7 @@
     <style type="text/css">
         /*ここに調整CSS記述*/
         .jumbotron {
-            background: url(./img/20210221_145137.jpg) center no-repeat;
+            background: url(./img/mtfuji_nightview.jpg) center no-repeat;
             background-size: cover;
             background-color: rgba(255, 255, 255, 0.45);
             background-blend-mode: lighten;
@@ -63,33 +65,18 @@
                 </div>
             </div>
 
-            <h4 class="d-block d-md-none">background</h4>
-            <h1 class="d-none d-md-block">background</h1>
-
-            <div class="row a">
-                <div class='col-12 col-md-6'>
-                    <a href='./img/tokyo.jpg'><img src='./img/tokyo_640x480.jpg' alt='img' class='img-thumbnail'></a>
-                </div>
-                <div class='col-12 col-md-6'>
-                    <a href='./img/TokyoTower_2880x1800.jpg'><img src='./img/TokyoTower_640x480.jpg' alt='img2'
-                            class='img-thumbnail'></a>
-                </div>
-                <div class='col-12 col-md-6'>
-                    <a href='./img/IMG_3370.jpg'><img src='./img/IMG_3370_640x480.jpg' alt='img4'
-                            class='img-thumbnail'></a>
-                </div>
-                <div class='col-12 col-md-6'>
-                    <a href='./img/nightview.jpg'><img src='./img/nightview_640x480.jpg' alt='img4'
-                            class='img-thumbnail'></a>
-                </div>
-            </div>
-
             <hr class="my-4">
-            <h4 class="d-block d-md-none">Link</h4>
-            <h1 class="d-none d-md-block">Link</h1>
-            <div class="container">
-                <a href="./note/index.md">note<span class="badge badge-secondary">New</span></a>
-            </div>
+            <h4 class="d-block d-md-none">article2</h4>
+            <h1 class="d-none d-md-block">article2</h1>
+            <article class="conss">
+                <div class="at2" style="font-family: sans-serif; word-wrap: break-word;"></div>
+                <script>
+                    $(function () {
+                        $(".at2").load("./article/article2.txt");
+                    });
+                </script>
+            </article>
+
         </div>
     </main>
 
