@@ -46,6 +46,10 @@ pre{
 .header_s .logo img {
   height: 80px;
 }
+
+.header_s .logo img {
+  height: 45px;
+}
 .header_s .sub_navi {
   top: -40px;
 }
@@ -86,10 +90,6 @@ pre{
         position: absolute;
         top: 8px;
         left: 50%;
-      }
-
-      .header_s .logo img {
-        height: 45px;
       }
     }
 
