@@ -87,11 +87,12 @@ pre{
         top: 8px;
         left: 50%;
       }
+
+      .header_s .logo img {
+        height: 45px;
+      }
     }
 
-    .header .logo img {
-      height: 45px;
-    }
 /*Headerのlogo*/
 
 .header nav {
