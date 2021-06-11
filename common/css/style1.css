@@ -44,7 +44,7 @@ pre{
   transition: .2s;
 }
 .header_s .logo img {
-  height: 80px;
+  height: 45px;
 }
 .header_s .sub_navi {
   top: -40px;
@@ -90,7 +90,7 @@ pre{
     }
 
     .header .logo img {
-      width: 80px;
+      height: 45px;
     }
 /*Headerのlogo*/
 
