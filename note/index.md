@@ -23,8 +23,8 @@ References
 
 ### クリップボード関係 ###
 + クリップボード監視 [link](https://gogowaten.hatenablog.com/entry/2019/09/22/143931)
-+ WM _ drawclipboard（レガシー）[link](https://docs.microsoft.com/ja-jp/windows/win32/dataxchg/wm-drawclipboard)
-+ AddClipboardFormatListener（推奨）[link](https://docs.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-addclipboardformatlistener)
++ WM _ drawclipboard-Microsoft公式リファレンス（レガシー,非推奨）[link](https://docs.microsoft.com/ja-jp/windows/win32/dataxchg/wm-drawclipboard)
++ AddClipboardFormatListener-Microsoft公式リファレンス（推奨）[link](https://docs.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-addclipboardformatlistener)
 + nugetでパッケージ追加時のエラー対処 [link](https://ameblo.jp/tubutappuri-san/entry-12598949900.html)
 + ソフトの設定データ保存・復元 [link](https://qiita.com/tera1707/items/2ebc0e5c48dc5226f60c)
 + 連番のファイル名を生成する [link](https://ja.stackoverflow.com/questions/4312/%E9%80%A3%E7%95%AA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF)
@@ -32,6 +32,6 @@ References
 + ファイルを開くダイアログ [link](https://threeshark3.com/commonopenfiledialog/)
 + Toast-Microsoft公式リファレンス [link](https://docs.microsoft.com/ja-jp/windows/uwp/design/shell/tiles-and-notifications/send-local-toast?tabs=uwp)
 
-### ツール、IDE ###
-+ Visual Studio 2017 Commnity
+### Editor,IDE ###
 + Visual Studio Code
++ Visual Studio 2017 Commnity
