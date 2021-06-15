@@ -6,3 +6,5 @@
 
 ### 準備中です ###
 <img src="../img/makunoshita.png" title="マクノシタ" />
+WM _ drawclipboardでも実装可能ですが、  
+Vista以降はAddClipboardFormatListenerを使用することを推奨。
